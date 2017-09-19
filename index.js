@@ -6,7 +6,7 @@ const login = require('./functions/login')
 const chat = require('./functions/chat')
 
 // Connect to the platform
-engine.connect('192.168.3.241', 5672, (err) => {
+engine.connect('localhost', 5672, (err) => {
   if (err) {
     console.error(err)
     return
